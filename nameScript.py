@@ -9,4 +9,5 @@ async def on_message(message):
         if message.content.contains("sarah" or "SARAH" or "Sarah"):
                 message = 'I can\'t see your comment {0.author.mention}? It\'s just blank?'.format(message)
                 await.client.send_message(message.channel, msg)
+client.run(TOKEN)
 
